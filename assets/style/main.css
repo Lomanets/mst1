@@ -1,0 +1,52 @@
+@import url('./normalize.css');
+@import url('./fonts.css');
+@import url('./variables.css');
+@import url('./header.css');
+@import url('./houses.css');
+@import url('./form.css');
+@import url('./footer.css');
+
+
+* {
+    outline: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: var(--font-family);
+    font-weight: 400;
+    margin: 0px;
+    padding: 0px;
+    color: #ffffff;
+    background: #282829;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--black)
+}
+
+.container {
+    width: 1597px;
+    margin: 0 auto;
+}

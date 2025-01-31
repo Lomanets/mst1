@@ -1,0 +1,114 @@
+.header {
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    background: #222222;
+    padding-top: 44px;
+    padding-bottom: 50px;
+    position: relative;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 205px;
+}
+
+.menu-logo {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 150%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.menu-list {
+    display: flex;
+    align-items: center;
+    column-gap: 29px;
+}
+
+.menu-list__link {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.offer-container {
+    padding-top: 244px;
+}
+
+.offer-wrap__title {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 120%;
+    max-width: 537px;
+}
+
+.offer-wrap__text {
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 120%;
+    margin-top: 50px;
+}
+
+.offer-wrap__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 35px;
+    margin-top: 64px;
+}
+
+.offer-wrap__item {
+    display: flex;
+    align-items: center;
+    column-gap: 17px;
+}
+
+.offer-wrap__item-text {
+    display: inline-flex;
+    align-items: center;
+    column-gap: 15px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 110%;
+}
+
+.offer-wrap__item-span {
+    font-family: var(--second-family);
+    font-size: 40px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.offer-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 191px;
+    height: 96px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #222;
+    margin-top: 40px;
+}
+
+.header-bg {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    min-width: 763px;
+    height: 100%;
+    background-image: url('../images/house.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

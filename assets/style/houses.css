@@ -1,0 +1,79 @@
+.houses {
+    padding-top: 100px;
+}
+
+.houses-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.houses-left, .houses-right {
+    flex-basis: 622px;
+    flex-grow: 1;
+    flex-shrink: 2;
+    min-height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.houses-left {
+    background-image: url('../images/house2.webp');
+}
+
+.houses-right {
+    background-image: url('../images/house3.webp');
+}
+
+.houses-content {
+    flex-basis: 622px;
+    flex-grow: 2;
+    flex-shrink: 1;
+    padding: 53px 53px 0px 53px;
+}
+
+.houses-content__list {
+    display: grid;
+    flex-direction: column;
+    row-gap: 40px;
+}
+
+.houses-content__item {
+    display: grid;
+    grid-template-columns: 85px 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    border-bottom: 1px solid #55565a;
+    padding-bottom: 40px;
+}
+
+.houses-content__item:last-of-type {
+    border-bottom: 0px;
+}
+
+.houses-content__item svg {
+    align-self: center;
+}
+
+.houses-content__item-text {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 140%;
+}
+
+.houses-content__button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    width: 100%;
+    height: 78px;
+    box-sizing: border-box;
+    background: #fff;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #282829;
+}
