@@ -1,0 +1,9 @@
+@keyframes divMove {
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.offer-wrap {
+    animation: divMove 2s linear 1 forwards;
+}
