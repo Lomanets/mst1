@@ -6,12 +6,20 @@
     position: relative;
 }
 
+.menu {
+    position: sticky;
+    top: 0px;
+    z-index: 3;
+}
+
 .menu-container {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     column-gap: 205px;
+
 }
+
 
 .menu-logo {
     font-family: var(--second-family);
@@ -20,25 +28,42 @@
     line-height: 150%;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    background: #222222;
 }
 
 .menu-list {
     display: flex;
     align-items: center;
     column-gap: 29px;
+    background: #222222;
 }
 
 .menu-list__link {
+    display: inline-block;
     font-style: italic;
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
     letter-spacing: 0.04em;
     text-transform: uppercase;
+    transform: translateY(0px);
+    transition: ease transform 0.5s;
+}
+
+.menu-list__link:hover {
+    transform: translateY(-4px);
+}
+
+.menu-list__link:active {
+    transform: translateY(0px);
 }
 
 .offer-container {
     padding-top: 244px;
+}
+
+.offer-wrap {
+    transform: translateX(-200%);
 }
 
 .offer-wrap__title {

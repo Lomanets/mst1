@@ -27,6 +27,8 @@
 .form form {
     margin-top: 45px;
     max-width: 781px;
+    position: relative;
+    z-index: 2;
 }
 
 .form-input {
@@ -43,6 +45,12 @@
     line-height: 150%;
     color: #55565a;
     opacity: 0.7;
+    transition: ease border color 0.5s
+}
+
+.form-input:focus {
+    border: 2px solid #282829;
+    color: #282829;
 }
 
 .form-input__email {
@@ -58,10 +66,11 @@
 
 .form-wrap__check {
     border: 2px solid #405d65;
-border-radius: 4px;
-width: 24px;
-height: 24px;
-background: #fff;
+    border-radius: 4px;
+    width: 24px;
+    height: 24px;
+    background: #fff;
+    cursor: pointer;
 }
 
 .form-wrap__label {
@@ -69,6 +78,7 @@ background: #fff;
     font-size: 19px;
     line-height: 130%;
     color: #55565a;
+    cursor: pointer;
 }
 
 .form-button {

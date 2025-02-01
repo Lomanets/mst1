@@ -6,6 +6,7 @@
 @import url('./form.css');
 @import url('./footer.css');
 @import url('./adaptive.css');
+@import url('./animation.css');
 
 
 * {
@@ -50,4 +51,18 @@ a {
 .container {
     width: 1597px;
     margin: 0 auto;
+}
+
+.button {
+    cursor: pointer;
+    transition: ease transform 0.5s;
+    transform: translateY(0px);
+}
+
+.button:hover {
+    transform: translateY(-4px);
+}
+
+.button:active {
+    transform: translateY(0px);
 }

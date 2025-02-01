@@ -14,12 +14,24 @@
 }
 
 .footer-nav__link {
+    display: inline-block;
     font-style: italic;
     font-weight: 400;
     font-size: 20px;
     line-height: 150%;
     letter-spacing: 0.04em;
     text-transform: uppercase;
+    cursor: pointer;
+    transition: ease transform 0.5s;
+    transform: translateY(0px);
+}
+
+.footer-nav__link:hover {
+    transform: translateY(-4px);
+}
+
+.footer-nav__link:active {
+    transform: translateY(0px);
 }
 
 .footer-container {
@@ -68,6 +80,19 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.footer-list__link svg {
+    transform: scale(1);
+    transition: ease transform 0.5s;
+}
+
+.footer-list__link svg:hover {
+    transform: scale(1.07);
+}
+
+.footer-list__link svg:active {
+    transform: scale(0.93);
 }
 
 .footer-wrap__text, .footer-wrap__link {
